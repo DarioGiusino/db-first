@@ -1,0 +1,31 @@
+Struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+id                              || INT          || PRIMARY KEY, NOT NULL, AUTO INCREMENT, UNIQUE
+
+numero telaio(VIN)              || CHAR(17)     || NOT NULL, UNIQUE
+
+chilometraggio                  || MEDIUMINT    || NOT NULL
+
+casa produttrice                || VARCHAR(50)  || NOT NULL
+
+modello commerciale             || VARCHAR(50)  || NOT NULL
+
+targa                           || VARCHAR(20)  || NOT NULL
+
+anno prima immatricolazione     || YEAR         || NOT NULL
+
+tipo carburante                 || CHAR(1)      || NOT NULL, DEFAULT(B)
+
+colore                          || CHAR(3)      || NULL
+
+proprietari precedenti          || TINYINT      || NOT NULL, DEFAULT(1)
+
+costo d'acquisto                || FLOAT(8,2)   || NOT NULL
+
+categoria                       || CHAR(1)      || NULL
+
+porte                           || TINYINT      || NULL
+
+posti abitacolo                 || TINYINT      || NULL
+
+cambio                          || CHAR(1)      || NOT NULL, DEFAULT(M)
